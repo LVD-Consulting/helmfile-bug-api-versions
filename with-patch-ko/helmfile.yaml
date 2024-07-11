@@ -3,7 +3,8 @@ releases:
   - name: foo
     chart: ../chart
     strategicMergePatches:
-      - kind: PodDisruptionBudget
+      - apiVersion: policy/v1
+        kind: PodDisruptionBudget
         metadata:
           name: foo
           namespace: bar
