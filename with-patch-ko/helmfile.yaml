@@ -1,7 +1,7 @@
 ---
 releases:
   - name: foo
-    chart: ./
+    chart: ../chart
     strategicMergePatches:
       - kind: PodDisruptionBudget
         metadata:

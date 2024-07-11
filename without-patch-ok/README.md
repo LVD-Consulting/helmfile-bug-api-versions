@@ -2,8 +2,8 @@
 
 ```shell
 ❯ helmfile template .
-Building dependency release=foo, chart=.
-Templating release=foo, chart=.
+Building dependency release=foo, chart=../chart
+Templating release=foo, chart=../chart
 ---
 # Source: foo/templates/foo.yaml
 apiVersion:: policy/v1beta1
@@ -22,8 +22,8 @@ spec:
 
 ```shell
 ❯ helmfile template . --args --api-versions="policy/v1/PodDisruptionBudget"
-Building dependency release=foo, chart=.
-Templating release=foo, chart=.
+Building dependency release=foo, chart=../chart
+Templating release=foo, chart=../chart
 ---
 # Source: foo/templates/foo.yaml
 apiVersion:: policy/v1

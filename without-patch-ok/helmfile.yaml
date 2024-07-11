@@ -1,4 +1,4 @@
 ---
 releases:
   - name: foo
-    chart: ./
+    chart: ../chart
