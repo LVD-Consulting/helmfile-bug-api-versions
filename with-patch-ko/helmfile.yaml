@@ -1,0 +1,11 @@
+---
+releases:
+  - name: foo
+    chart: ./
+    strategicMergePatches:
+      - kind: PodDisruptionBudget
+        metadata:
+          name: foo
+          namespace: bar
+          labels:
+            patch: ok
