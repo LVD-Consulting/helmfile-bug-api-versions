@@ -8,5 +8,5 @@ releases:
         metadata:
           name: foo
           namespace: bar
-          labels:
+          annotations:
             patch: ok
